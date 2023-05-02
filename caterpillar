@@ -1,0 +1,101 @@
+/**
+ * 
+ * @author floyd
+ * @version (1)
+ * class  creates a class for caterpillar
+ * <p>
+ * this class stimulates the working of a caterpillar,
+ *  which does two things
+ * it moves and eats
+ */
+
+public class Caterpillar {
+
+	private int moves;
+	private int cabbages_eaten;
+	
+	/**
+	 * This is the constructor used to initialize the attributes<br>
+	 * eaten and moves <p>
+	 * @param moves -the number of moves made by the caterpillar
+	 * @param eaten -the number of cabbages eaten by he caterpillar
+	 */
+
+	public Caterpillar(int moves, int eaten)
+	{
+		this.setMoves(moves);
+		this.setCabbages_eaten(eaten);
+	}
+	/**
+	 * This is a method to get the number of moves made by the caterpillar <p>
+	 * @return - the number of moves
+	 */
+	int getMoves() {
+		return moves;
+	}
+	/**
+	 * This is the method to set the moves to be made by the caterpillar
+	 * @param moves to make
+	 */
+
+	void setMoves(int moves) {
+		this.moves = moves;
+	}
+	/**
+	 * This is the method to get the number of cabbages eaten<p>
+	 * @return - the cabbages eaten
+	 */
+	int getCabbages_eaten() {
+		return cabbages_eaten;
+	}
+	/**
+	 * This is the method to set the number of cabbages eaten<p>
+	 * @param cabbages_eaten - the number of cabbages eaten
+	 */
+	void setCabbages_eaten(int cabbages_eaten) {
+		this.cabbages_eaten = cabbages_eaten;
+	}
+	/**
+	 * This method increments the number of moves<p>
+	 * In particular for every number of moves is incremented by one
+	 */
+	void move()
+	{
+		setMoves(getMoves() + 1);
+	}
+	/**
+	 * This method increments the number of cabbages eaten<p>
+	 * In particular for every cabbage eaten made the<br>number of cabbages eaten is incremented by one
+	 */
+	void eat()
+	{
+		this.setCabbages_eaten(this.getCabbages_eaten() + 1);
+	}
+	/**
+	 * This method displays the following:<p>
+	 * 1) number of moves made<p>
+	 * 2) number of cabbages eaten
+	 * 
+	 * @see getMoves()
+	 * @see getCabbages_eaten()
+	 */
+	void display()
+	{
+		System.out.println("Moves made =" + getMoves());
+		System.out.println("Cabbages eaten =" + getCabbages_eaten());
+	}
+	/**
+	 * This is the main program<p>
+	 * This is the entry point to run objects to caterpillar class
+	 * @param args - array of arguments to pass
+	 */
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Caterpillar fred = new Caterpillar(0,0);
+		fred.move();
+		fred.eat();
+		fred.display();
+	}
+}
