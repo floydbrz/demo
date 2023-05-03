@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="main-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floyd's - Portfolio</title>
+</head>
+<body>
+    <header>
+        <!-- <div class="logo">
+            <p>Floyd Brz</p>
+        </div> -->
+    <nav>
+        <!-- <h3>Floyd Brz</h3> -->
+        <ul>
+            <a href="Main.html">Home</a>
+            <a href="pictures.html">Gallery</a>
+            <a href="contact.html">Contact Me</a>
+        </ul>
+        
+    </nav>
+
+    <section class="main">
+
+        <div class="text-box">
+            <h1>Floyd Brz</h1>
+        <p>"Capturing Moments, Creating Memories"</p>
+        </div>
+       </section>
+    </header>
+    
+</body>
+</html>
